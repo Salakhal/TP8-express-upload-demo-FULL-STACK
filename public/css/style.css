@@ -1,0 +1,145 @@
+/* Importation d'une police moderne (Poppins) depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* C'est ici que j'ai changé la couleur du background ! 
+       Vous pouvez mettre la couleur de votre choix (ex: #f3f4f6 ou un dégradé) */
+    background: #eef2f5; 
+    color: #333;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+/* Style des cartes (les blocs blancs) */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f1f5f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #3b82f6; /* Bleu moderne */
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f1f5f9;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+/* Style des champs de texte et de fichiers */
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #334155;
+    transition: all 0.3s ease;
+}
+
+/* Effet spécial pour l'input file pour le faire ressembler à une zone de dépôt (dropzone) */
+input[type="file"] {
+    border: 2px dashed #94a3b8;
+    cursor: pointer;
+    background-color: #f1f5f9;
+}
+
+/* Effet lors du clic/focus sur les champs */
+input[type="text"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #3b82f6;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+/* Style du texte explicatif (Formats acceptés...) */
+small {
+    display: block;
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* Style du bouton Téléverser */
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Pour la galerie d'images dans la page de succès */
+.gallery-item {
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.gallery-item img {
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
